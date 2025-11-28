@@ -1,4 +1,5 @@
-> Create a pod with two containers sharing a volume
+## Create a pod with two containers sharing a volume
+> Create file `shared-pod.yaml` using `vim shared-pod.yaml` and add the following content:
 ``` yaml
 kind: Pod
 apiVersion: v1
@@ -22,4 +23,10 @@ spec:
       volumeMounts:
         - name: shared-logs
           mountPath: /var/log/nginx
+```
+> save and exit the file.
+---
+> Create the Pod using the command:
+```bash
+kubectl apply -f shared-pod.yaml
 ```

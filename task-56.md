@@ -1,4 +1,5 @@
-> Create a Deployment 
+## Create a Deployment with Nginx and expose it via NodePort Service 
+> Create file `nginx-deployment.yaml` using `vim nginx-deployment.yaml` and add the following content:
 ``` yaml
 ---
 kind: Deployment 
@@ -22,8 +23,14 @@ spec:
           ports:
             - containerPort: 80
 ```
+> save and exit the file.
+>
+> Apply the Deployment using the command:
+```bash
+kubectl apply -f nginx-deployment.yaml
+```
 ---
-> Create a NodePort Service for the Deployment
+> Create file `nginx-service.yaml` using `vim nginx-service.yaml` and add the following content:
 ```yaml
 ---
 kind: Service
@@ -39,4 +46,10 @@ spec:
       port: 80
       targetPort: 80
       nodePort: 30011
+```
+> save and exit the file.
+> 
+> Apply the Service using the command:
+```bash
+kubectl apply -f nginx-service.yaml
 ```

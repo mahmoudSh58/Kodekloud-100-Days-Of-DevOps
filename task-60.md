@@ -1,6 +1,6 @@
-> Create a PersistentVolume, PersistentVolumeClaim, Pod, and NodePort Service
----
-Create `pv-xfusion.yaml` file use `vi pv-xfusion.yaml`
+## Create a PersistentVolume, PersistentVolumeClaim, Pod, and Service in Kubernetes
+
+>Create `pv-xfusion.yaml` file use `vi pv-xfusion.yaml`
 ``` yaml
 kind: PersistentVolume
 apiVersion: v1
@@ -14,9 +14,15 @@ spec:
     hostPath:
         path: /mnt/sysops
     storageClassName: manual
-``` 
+```
+> save and exit the file.
+>
+> Apply the PersistentVolume using the command:
+``` bash
+kubectl apply -f pv-xfusion.yaml
+```
 ---
-Create `pvc-xfusion.yaml` file use `vi pvc-xfusion.yaml`
+> Create `pvc-xfusion.yaml` file use `vi pvc-xfusion.yaml`
 ``` yaml
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -30,8 +36,14 @@ spec:
             storage: 1Gi
     storageClassName: manual
 ```
+> save and exit the file.
+>
+> Apply the PersistentVolumeClaim using the command:
+``` bash
+kubectl apply -f pvc-xfusion.yaml
+```
 ---
-Create `pod-xfusion.yaml` file use `vi pod-xfusion.yaml`
+>Create `pod-xfusion.yaml` file use `vi pod-xfusion.yaml`
 ``` yaml
 kind: Pod
 apiVersion: v1
@@ -53,8 +65,14 @@ spec:
           ports:
             - containerPort: 80
 ```
+> save and exit the file.
+>
+> Apply the Pod using the command:
+``` bash
+kubectl apply -f pod-xfusion.yaml
+```
 ---
-Create `service-xfusion.yaml` file by `vi service-xfusion.yaml`
+> Create `service-xfusion.yaml` file by `vi service-xfusion.yaml`
 ``` yaml
 kind: Service
 apiVersion: v1
@@ -70,12 +88,10 @@ spec:
           targetPort: 80
           nodePort: 30008
 ```
----
-
-> Apply all the manifests
+> save and exit the file.
+>
+> Apply the Service using the command:
 ``` bash
-kubectl apply -f pv-xfusion.yaml
-kubectl apply -f pvc-xfusion.yaml
-kubectl apply -f pod-xfusion.yaml
 kubectl apply -f service-xfusion.yaml
 ```
+---
