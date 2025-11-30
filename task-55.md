@@ -1,4 +1,7 @@
-## Create a pod with two containers sharing a volume
+## Day 55: Kubernetes Sidecar Containers
+
+1- Create Pod with Sidecar Container
+
 > Create file `shared-pod.yaml` using `vim shared-pod.yaml` and add the following content:
 ``` yaml
 kind: Pod
@@ -29,4 +32,10 @@ spec:
 > Create the Pod using the command:
 ```bash
 kubectl apply -f shared-pod.yaml
+```
+---
+2- Verify the Pod
+
+```bash
+kubectl get pods
 ```

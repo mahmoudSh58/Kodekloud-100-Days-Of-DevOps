@@ -1,5 +1,6 @@
-## Create a PersistentVolume, PersistentVolumeClaim, Pod, and Service in Kubernetes
+## Day 60: Persistent Volumes in Kubernetes
 
+1- Create PersistentVolume
 >Create `pv-xfusion.yaml` file use `vi pv-xfusion.yaml`
 ``` yaml
 kind: PersistentVolume
@@ -22,6 +23,7 @@ spec:
 kubectl apply -f pv-xfusion.yaml
 ```
 ---
+2- Create PersistentVolumeClaim
 > Create `pvc-xfusion.yaml` file use `vi pvc-xfusion.yaml`
 ``` yaml
 kind: PersistentVolumeClaim
@@ -43,6 +45,7 @@ spec:
 kubectl apply -f pvc-xfusion.yaml
 ```
 ---
+3- Create Pod and Mount the PVC
 >Create `pod-xfusion.yaml` file use `vi pod-xfusion.yaml`
 ``` yaml
 kind: Pod
@@ -72,6 +75,7 @@ spec:
 kubectl apply -f pod-xfusion.yaml
 ```
 ---
+4- Create Service to expose the Pod
 > Create `service-xfusion.yaml` file by `vi service-xfusion.yaml`
 ``` yaml
 kind: Service

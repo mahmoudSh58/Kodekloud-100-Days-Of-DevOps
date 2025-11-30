@@ -1,11 +1,12 @@
-## Create a Grafana Deployment and expose it via NodePort Service
+## Day 58: Deploy Grafana on Kubernetes Cluster
 
-> Create Grafana Deployment using the command:
+1- Create Grafana Deployment
 ``` yaml
 ``` bash
 kubectl create deployment grafana-deployment-xfusion --image=grafana/grafana --port=3000 
 ```
 ---
+2- Create Service to expose Grafana Deployment
 > Create file `grafana-service-xfusion.yaml` using `vim grafana-service-xfusion.yaml` and add the following content:
 ``` yaml
 kind: Service
@@ -27,4 +28,11 @@ spec:
 > Apply the Service using the command: 
 ``` bash
 kubectl apply -f grafana-service-xfusion.yaml 
+```
+---
+3- Verify the Deployment and Service
+> Verify the Grafana Deployment using the command:
+``` bash
+kubectl get deployments
+kubectl get services
 ```

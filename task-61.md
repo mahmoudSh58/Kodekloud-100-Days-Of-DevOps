@@ -1,5 +1,7 @@
-## Create a Deployment manifest with an init container and a main container
+## Day 61: Init Containers in Kubernetes
 ---
+1- Create Deployment Manifest
+
 > Create file `ic-deploy-xfusion.yaml` using `vi ic-deploy-xfusion.yaml` command and add the following content:
 ``` yaml
 kind: Deployment

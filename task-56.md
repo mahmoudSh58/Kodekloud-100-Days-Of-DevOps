@@ -1,4 +1,6 @@
-## Create a Deployment with Nginx and expose it via NodePort Service 
+## Day 56: Deploy Nginx Web Server on Kubernetes Cluster 
+
+1- Create Nginx Deployment
 > Create file `nginx-deployment.yaml` using `vim nginx-deployment.yaml` and add the following content:
 ``` yaml
 ---
@@ -30,6 +32,7 @@ spec:
 kubectl apply -f nginx-deployment.yaml
 ```
 ---
+2- Create Nginx Service
 > Create file `nginx-service.yaml` using `vim nginx-service.yaml` and add the following content:
 ```yaml
 ---
@@ -52,4 +55,11 @@ spec:
 > Apply the Service using the command:
 ```bash
 kubectl apply -f nginx-service.yaml
+```
+---
+3- Verify the Deployment and Service
+> Verify the Deployment using the command:
+``` bash  
+kubectl get deployments
+kubectl get services
 ```

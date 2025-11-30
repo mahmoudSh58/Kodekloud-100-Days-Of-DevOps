@@ -1,4 +1,5 @@
-## Update the Redis Deployment to use the correct image and ConfigMap
+## Day 59: Troubleshoot Deployment issues in Kubernetes
+
 > Use the command to edit the Redis Deployment:
 ``` bash
 kubectl edit deployment redis-deployment
