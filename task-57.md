@@ -1,7 +1,7 @@
 ## Day 57: Print Environment Variables
 
 1- Create Pod to Print Environment Variables
-> Create file `print-envars-greeting.yaml` using `vim print-envars-greeting.yaml` and add the following content:
+> Create file `print-envars-greeting.yaml` using `vi print-envars-greeting.yaml` and add the following content:
 ``` yaml
 kind: Pod
 apiVersion: v1

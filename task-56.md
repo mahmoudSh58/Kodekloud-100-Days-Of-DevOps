@@ -1,7 +1,7 @@
 ## Day 56: Deploy Nginx Web Server on Kubernetes Cluster 
 
 1- Create Nginx Deployment
-> Create file `nginx-deployment.yaml` using `vim nginx-deployment.yaml` and add the following content:
+> Create file `nginx-deployment.yaml` using `vi nginx-deployment.yaml` and add the following content:
 ``` yaml
 ---
 kind: Deployment 
@@ -33,7 +33,7 @@ kubectl apply -f nginx-deployment.yaml
 ```
 ---
 2- Create Nginx Service
-> Create file `nginx-service.yaml` using `vim nginx-service.yaml` and add the following content:
+> Create file `nginx-service.yaml` using `vi nginx-service.yaml` and add the following content:
 ```yaml
 ---
 kind: Service

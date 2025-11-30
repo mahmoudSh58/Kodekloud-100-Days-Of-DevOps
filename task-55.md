@@ -2,7 +2,7 @@
 
 1- Create Pod with Sidecar Container
 
-> Create file `shared-pod.yaml` using `vim shared-pod.yaml` and add the following content:
+> Create file `shared-pod.yaml` using `vi shared-pod.yaml` and add the following content:
 ``` yaml
 kind: Pod
 apiVersion: v1

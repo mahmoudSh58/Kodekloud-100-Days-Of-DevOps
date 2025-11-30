@@ -7,7 +7,7 @@ kubectl create deployment grafana-deployment-xfusion --image=grafana/grafana --p
 ```
 ---
 2- Create Service to expose Grafana Deployment
-> Create file `grafana-service-xfusion.yaml` using `vim grafana-service-xfusion.yaml` and add the following content:
+> Create file `grafana-service-xfusion.yaml` using `vi grafana-service-xfusion.yaml` and add the following content:
 ``` yaml
 kind: Service
 apiVersion: v1
