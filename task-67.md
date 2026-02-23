@@ -1,4 +1,4 @@
-## Day 67:
+## Day 67: Deploy Guest Book App on Kubernetes
 
  1- Create redis deployment
 
