@@ -10,21 +10,21 @@ This repo is a simple collection of solved tasks. Each `task-XX.md` file holds t
 
 ## Solved tasks
 
-- [task-55.md](task-55.md)
-- [task-56.md](task-56.md)
-- [task-57.md](task-57.md)
-- [task-58.md](task-58.md)
-- [task-59.md](task-59.md)
-- [task-60.md](task-60.md)
-- [task-61.md](task-61.md)
-- [task-62.md](task-62.md)
-- [task-63.md](task-63.md)
-- [task-64.md](task-64.md)
-- [task-65.md](task-65.md)
-- [task-66.md](task-66.md)
-- [task-67.md](task-67.md)
-- [task-68.md](task-68.md)
-- task-69.md
+- [task-55.md](/tasks/task-55.md)
+- [task-56.md](/tasks/task-56.md)
+- [task-57.md](/tasks/task-57.md)
+- [task-58.md](/tasks/task-58.md)
+- [task-59.md](/tasks/task-59.md)
+- [task-60.md](/tasks/task-60.md)
+- [task-61.md](/tasks/task-61.md)
+- [task-62.md](/tasks/task-62.md)
+- [task-63.md](/tasks/task-63.md)
+- [task-64.md](/tasks/task-64.md)
+- [task-65.md](/tasks/task-65.md)
+- [task-66.md](/tasks/task-66.md)
+- [task-67.md](/tasks/task-67.md)
+- [task-68.md](/tasks/task-68.md)
+- [task-69.md](/tasks/task-69.md)
 - task-70.md
 - task-71.md
 - task-72.md
