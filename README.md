@@ -57,6 +57,10 @@ This repo is a simple collection of solved tasks. Each `task-XX.md` file holds t
 - task-99.md
 - task-100.md
 
+## Contributing
+Feel free to fork this repository and add your own solutions to the tasks. You can create a new file for each task or update existing ones with additional notes and commands.
 
+## Created By
+This repository was created by [Mahmoud Sharif](https://www.linkedin.com/in/mahmoud-sharif-mossad/) as a personal reference for the KodeKloud "100 Days of DevOps" workshop. It is intended to help others who are participating in the workshop or looking for solutions to similar problems.
 
 
