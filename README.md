@@ -36,8 +36,9 @@ Below are the task files included in this repository. Links point to the individ
 - [task-67.md](tasks/task-67.md)
 - [task-68.md](tasks/task-68.md)
 - [task-69.md](tasks/task-69.md)
+- [task-70.md](tasks/task-70.md)
 
-More task notes (70–100) will be added here as they are completed.
+More task notes (71–100) will be added here as they are completed.
 
 ## Contributing
 
